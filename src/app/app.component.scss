@@ -1,0 +1,14 @@
+.header {
+  justify-content: space-between;
+  align-items    : center;
+
+  .desc {
+    font-size   : small;
+    margin-left : 1rem;
+    margin-right: auto;
+  }
+
+  .logo {
+    height: 40px;
+  }
+}
