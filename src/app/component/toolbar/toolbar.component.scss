@@ -1,0 +1,30 @@
+.header {
+
+  justify-content: space-between;
+  align-items    : center;
+  padding        : 0 calc((100vw - 1000px) / 2);
+
+  background-color: white;
+
+  .title {
+    font-size  : x-large;
+    font-weight: bold;
+    color      : #2196f3;
+  }
+
+  .desc {
+    font-size   : small;
+    margin-left : 1rem;
+    margin-right: auto;
+    color       : #2196f3;
+  }
+
+  .input {
+    transform: scale(0.75);
+    color    : gray;
+  }
+
+  .logo {
+    height: 40px;
+  }
+}
