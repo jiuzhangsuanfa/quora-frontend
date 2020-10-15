@@ -1,0 +1,55 @@
+.card {
+
+  background-color   : white;
+  padding            : 1rem;
+  border-bottom      : 0.1px;
+  border-bottom-style: solid;
+  border-bottom-color: #d8d8d8;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .content {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : flex-start;
+    height         : 110px;
+
+    .image {
+      height: 100%;
+    }
+
+    .text {
+      margin-left       : 2rem;
+      display           : -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      overflow          : hidden;
+    }
+  }
+
+  .action {
+    margin-top: 1rem;
+
+    button:not(.like):not(.dislike) {
+      color     : gray;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: #2196f3;
+      }
+    }
+
+    button span {
+      padding-left: 0.5rem;
+    }
+
+    .like,
+    .dislike {
+      background-color: #f6fbff;
+    }
+  }
+
+}

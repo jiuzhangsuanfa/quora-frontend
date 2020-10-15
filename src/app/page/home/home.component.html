@@ -1,0 +1,52 @@
+<div class="card" *ngFor="let question of questions">
+
+  <h2 class="title">{{ question.title }}</h2>
+
+  <div class="content">
+    <img [src]="question.image" alt="" class="image">
+    <span class="text">{{ question.text }}</span>
+  </div>
+
+  <div class="action">
+    <button class="like" mat-button color="primary">
+      <mat-icon>thumb_up_alt</mat-icon><span>赞同 {{ question.action.like }}</span>
+    </button>
+    <button class="dislike" mat-button color="primary">
+      <mat-icon>thumb_down_alt</mat-icon>
+    </button>
+    <button mat-button color="primary">{{ question.action.comment }} 条评论</button>
+    <button mat-button color="primary">分享</button>
+    <button mat-button color="primary">收藏</button>
+    <button mat-button color="primary">喜欢</button>
+    <button mat-button>
+      <mat-icon>more_horiz</mat-icon>
+    </button>
+  </div>
+
+</div>
+
+<!-- <mat-card class="card">
+
+  <mat-card-header>
+    <img mat-card-avatar class="example-header-image" src="https://material.angular.io/assets/img/examples/shiba1.jpg"
+      alt="">
+    <mat-card-title>Question Title</mat-card-title>
+    <mat-card-subtitle>{{ now | date }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+
+</mat-card> -->
