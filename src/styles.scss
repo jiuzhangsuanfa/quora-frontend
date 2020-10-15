@@ -25,8 +25,8 @@ $tinyurl-theme: mat-light-theme((color: (primary: $tinyurl-primary,
 @include angular-material-theme($tinyurl-theme);
 
 $custom-typography: mat-typography-config($font-family: 'Fira Code VF, Fira Code, Microsoft Yahei, PingFangSC-Regular, sans-serif',
-  $headline: mat-typography-level(32px, 48px, 700),
-  $body-1: mat-typography-level(16px, 24px, 400));
+  $headline: mat-typography-level(32px, 44px, 700),
+  $body-1: mat-typography-level(16px, 22px, 400));
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -83,6 +83,7 @@ body {
 }
 
 body {
-  margin     : 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin          : 0;
+  font-family     : Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f6f6f6;
 }
